@@ -80,4 +80,23 @@ func main() {
 
 	logic.Logic0213(9)
 	fmt.Println()
+
+	logic.Logic0301(9)
+	fmt.Println()
+
+	logic.Logic0302(9)
+	fmt.Println()
+
+	logic.Logic0303(9)
+	fmt.Println()
+
+	logic.Logic0304(9)
+	fmt.Println()
+
+	logic.Logic0401(4)
+	fmt.Println()
+
+	logic.Logic0402(4)
+	fmt.Println()
+
 }

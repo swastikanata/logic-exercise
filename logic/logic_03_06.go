@@ -6,7 +6,7 @@ import (
 )
 
 func Logic0309(n int) {
-	fmt.Println("logic_03_09")
+	fmt.Println("logic_03_06")
 
 	matrix := make([][]int, n)
 	for i := range matrix {

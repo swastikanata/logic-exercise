@@ -1,8 +1,13 @@
 package logic
 
-import slice "github.com/swastikanata/go-print-slice"
+import (
+	"fmt"
+	slice "github.com/swastikanata/go-print-slice"
+)
 
 func Logic0112(n int) {
+	fmt.Println("logic_01_12")
+
 	a := 1
 	b := 2
 	array := make([]int, n)

@@ -1,11 +1,13 @@
 package logic
 
 import (
+	"fmt"
 	slice "github.com/swastikanata/go-print-slice"
 	"logic-exercise/utils"
 )
 
 func Logic0208(n int) {
+	fmt.Println("logic_02_08")
 
 	matrix := utils.Create2DArray(n)
 
