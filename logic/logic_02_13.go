@@ -7,10 +7,10 @@ func Logic0213(n int) {
 	matrix := utils.Create2DArray(n)
 
 	padding := 0
-	for i := 0; i <= n/2; i++ {
-		for j := 0 + padding; j < n-padding; j++ {
-			matrix[i][j] = 2*j + 1
-			matrix[n-1-i][j] = 2*j + 1
+	for row := 0; row <= n/2; row++ {
+		for col := 0 + padding; col < n-padding; col++ {
+			matrix[row][col] = 2*col + 1
+			matrix[n-1-row][col] = 2*col + 1
 		}
 		padding++
 	}

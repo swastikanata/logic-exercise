@@ -9,9 +9,9 @@ func Logic0201(n int) {
 
 	matrix := utils.Create2DArray(n)
 
-	for i := 0; i < n; i++ {
-		for j := 0; j < n; j++ {
-			matrix[i][j] = 2*j + 1
+	for row := 0; row < n; row++ {
+		for col := 0; col < n; col++ {
+			matrix[row][col] = 2*col + 1
 		}
 	}
 

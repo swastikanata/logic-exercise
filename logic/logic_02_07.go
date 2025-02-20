@@ -9,8 +9,9 @@ func Logic0207(n int) {
 
 	matrix := utils.Create2DArray(n)
 
-	for i := 0; i < n; i++ {
-		matrix[i][i] = 2*i + 1
+	for row := 0; row < n; row++ {
+		col := row
+		matrix[row][col] = 2*row + 1
 	}
 
 	slice.Print2DSlice(matrix)

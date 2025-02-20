@@ -9,23 +9,18 @@ func Logic0205(n int) {
 
 	matrix := utils.Create2DArray(n)
 
-	dir := 1
-	i := 0
-	j := 0
 	count := 1
-
-	for i < n && j < n {
-		matrix[i][j] = count
-		count = count + 2
-
-		if j == n-1 && dir == 1 {
-			i++
-			dir = dir * (-1)
-		} else if j == 0 && dir == -1 {
-			i++
-			dir = dir * (-1)
+	for row := 0; row < n; row++ {
+		if row%2 == 0 {
+			for col := 0; col < n; col++ {
+				matrix[row][col] = count
+				count = count + 2
+			}
 		} else {
-			j = j + dir
+			for col := n - 1; col >= 0; col-- {
+				matrix[row][col] = count
+				count = count + 2
+			}
 		}
 	}
 
