@@ -2,8 +2,8 @@ package logic
 
 import "fmt"
 
-func Logic0301(n int) {
-	fmt.Println("logic_03_01")
+func Logic0309(n int) {
+	fmt.Println("logic_03_09")
 
 	matrix := make([][]int, n)
 	for i := range matrix {

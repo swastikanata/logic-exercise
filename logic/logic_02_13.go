@@ -1,6 +1,10 @@
 package logic
 
+import "fmt"
+
 func Logic0213(n int) {
+	fmt.Println("logic_02_13")
+
 	matrix := make([][]int, n)
 	for i := range matrix {
 		matrix[i] = make([]int, n)
@@ -15,5 +19,5 @@ func Logic0213(n int) {
 		padding++
 	}
 
-	print_matrix(matrix, n)
+	printMatrix(matrix, n)
 }

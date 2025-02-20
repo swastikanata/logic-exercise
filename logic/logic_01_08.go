@@ -3,6 +3,8 @@ package logic
 import "fmt"
 
 func Logic0108(n int) {
+	fmt.Println("logic_01_08")
+
 	a := 2
 	b := 2
 	mid := n / 2

@@ -6,6 +6,8 @@ import (
 )
 
 func Logic0211(n int) {
+	fmt.Println("logic_02_11")
+
 	cell_width := 3
 	for i := 0; i < n; i++ {
 		for j := 0; j < n; j++ {
