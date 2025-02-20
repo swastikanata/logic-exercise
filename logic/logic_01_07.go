@@ -2,10 +2,10 @@ package logic
 
 import slice "github.com/swastikanata/go-print-slice"
 
-func Logic0108(n int) {
+func Logic0107(n int) {
 	array := make([]int, n)
 
-	a := 2
+	a := 1
 	b := 2
 	mid := n / 2
 

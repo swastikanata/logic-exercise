@@ -5,17 +5,18 @@ import (
 	"logic-exercise/utils"
 )
 
-func Logic0211(n int) {
+func Logic0204(n int) {
 
 	matrix := utils.Create2DArray(n)
 
+	count := 1
 	for i := 0; i < n; i++ {
 		for j := 0; j < n; j++ {
-			if i <= j {
-				matrix[i][j] = 2*j + 1
-			}
+			matrix[i][j] = count
+			count = count + 3
 		}
 	}
 
 	slice.Print2DSlice(matrix)
+
 }

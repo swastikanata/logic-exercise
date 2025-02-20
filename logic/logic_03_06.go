@@ -1,6 +1,9 @@
 package logic
 
-import "fmt"
+import (
+	"fmt"
+	slice "github.com/swastikanata/go-print-slice"
+)
 
 func Logic0309(n int) {
 	fmt.Println("logic_03_09")
@@ -30,6 +33,5 @@ func Logic0309(n int) {
 			j = j + dir
 		}
 	}
-
-	printMatrix(matrix, n)
+	slice.Print2DSlice(matrix)
 }

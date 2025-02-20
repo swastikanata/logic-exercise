@@ -1,17 +1,13 @@
 package logic
 
 import (
-	"fmt"
 	slice "github.com/swastikanata/go-print-slice"
+	"logic-exercise/utils"
 )
 
-func Logic0301(n int) {
-	fmt.Println("logic_03_01")
+func Logic0205(n int) {
 
-	matrix := make([][]int, n)
-	for i := range matrix {
-		matrix[i] = make([]int, n)
-	}
+	matrix := utils.Create2DArray(n)
 
 	dir := 1
 	i := 0
@@ -22,9 +18,8 @@ func Logic0301(n int) {
 		matrix[i][j] = count
 		count = count + 2
 
-		if i == j && dir == 1 {
+		if j == n-1 && dir == 1 {
 			i++
-			j++
 			dir = dir * (-1)
 		} else if j == 0 && dir == -1 {
 			i++
@@ -35,4 +30,5 @@ func Logic0301(n int) {
 	}
 
 	slice.Print2DSlice(matrix)
+
 }

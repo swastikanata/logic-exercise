@@ -1,23 +1,22 @@
 package logic
 
-import "fmt"
+import (
+	slice "github.com/swastikanata/go-print-slice"
+	"logic-exercise/utils"
+)
 
 func Logic0203(n int) {
-	fmt.Println("logic_02_03")
 
-	matrix := make([][]int, n)
-	for i := range matrix {
-		matrix[i] = make([]int, n)
-	}
+	matrix := utils.Create2DArray(n)
 
-	padding := 0
-	for i := 0; i <= n/2; i++ {
-		for j := 0 + padding; j < n-padding; j++ {
-			matrix[i][j] = 2*j + 1
-			matrix[n-1-i][j] = 2*j + 1
+	count := 1
+	for i := 0; i < n; i++ {
+		for j := 0; j < n; j++ {
+			matrix[i][j] = count
+			count = count + 2
 		}
-		padding++
 	}
 
-	printMatrix(matrix, n)
+	slice.Print2DSlice(matrix)
+
 }

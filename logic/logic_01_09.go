@@ -2,11 +2,11 @@ package logic
 
 import slice "github.com/swastikanata/go-print-slice"
 
-func Logic0108(n int) {
+func Logic0109(n int) {
 	array := make([]int, n)
 
-	a := 2
-	b := 2
+	a := 3
+	b := 3
 	mid := n / 2
 
 	for i := 0; i < mid; i++ {
