@@ -9,7 +9,7 @@ import (
 func Logic0305(n int) {
 	fmt.Println("logic_03_05")
 
-	matrix := utils.Create2DArray(n)
+	matrix := utils.Create2DArray(n, n)
 
 	counter := 1
 

@@ -23,7 +23,7 @@ func Logic0402(n int) {
 	fmt.Println("logic_04_02")
 
 	arraySize := n * (n + 1) / 2
-	matrix := utils.Create2DArray(arraySize)
+	matrix := utils.Create2DArray(arraySize, arraySize)
 
 	row := arraySize - 1
 	col := 0

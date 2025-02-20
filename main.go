@@ -105,10 +105,24 @@ func main() {
 	logic.Logic0308(9)
 	fmt.Println()
 
+	logic.Logic0311(9)
+	fmt.Println()
+
+	logic.Logic0311b(9)
+	fmt.Println()
+
+	logic.Logic0312(9)
+	fmt.Println()
+
+	logic.Logic0312b(9)
+	fmt.Println()
+
+	logic.Logic0314(9)
+	fmt.Println()
+
 	logic.Logic0401(4)
 	fmt.Println()
 
 	logic.Logic0402(4)
 	fmt.Println()
-
 }
