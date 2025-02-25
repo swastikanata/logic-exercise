@@ -1,12 +1,10 @@
 package logic
 
 import (
-	"fmt"
-	slice "github.com/swastikanata/go-print-slice"
 	"logic-exercise/utils"
 )
 
-func SquareBlock(row int, col int, n int, matrix [][]int) (int, int) {
+func SquareBlock(row int, col int, n int, matrix [][]int) {
 	counter := 1
 
 	for i := row; i < row+n; i++ {
@@ -15,13 +13,9 @@ func SquareBlock(row int, col int, n int, matrix [][]int) (int, int) {
 			counter = counter + 2
 		}
 	}
-
-	return row + n, col + n
 }
 
-func Logic0401(n int) {
-	fmt.Println("logic_04_01")
-
+func Logic0401(n int) [][]int {
 	arraySize := n * (n + 1) / 2
 	matrix := utils.Create2DArray(arraySize, arraySize)
 
@@ -29,8 +23,10 @@ func Logic0401(n int) {
 	col := 0
 
 	for i := 1; i <= n; i++ {
-		row, col = SquareBlock(row, col, i, matrix)
+		SquareBlock(row, col, i, matrix)
+		row += i
+		col += i
 	}
 
-	slice.Print2DSlice(matrix)
+	return matrix
 }

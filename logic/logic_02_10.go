@@ -1,14 +1,10 @@
 package logic
 
 import (
-	"fmt"
-	slice "github.com/swastikanata/go-print-slice"
 	"logic-exercise/utils"
 )
 
-func Logic0210(n int) {
-	fmt.Println("logic_02_10")
-
+func Logic0210(n int) [][]int {
 	matrix := utils.Create2DArray(n, n)
 
 	for row := 0; row < n; row++ {
@@ -18,6 +14,5 @@ func Logic0210(n int) {
 			}
 		}
 	}
-
-	slice.Print2DSlice(matrix)
+	return matrix
 }

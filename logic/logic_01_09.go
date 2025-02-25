@@ -1,13 +1,6 @@
 package logic
 
-import (
-	"fmt"
-	slice "github.com/swastikanata/go-print-slice"
-)
-
-func Logic0109(n int) {
-	fmt.Println("logic_01_09")
-
+func Logic0109(n int) []int {
 	array := make([]int, n)
 
 	a := 3
@@ -23,5 +16,5 @@ func Logic0109(n int) {
 		array[mid] = a + mid*b
 	}
 
-	slice.Print1DSlice(array)
+	return array
 }

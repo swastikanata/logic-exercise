@@ -5,8 +5,6 @@ import (
 )
 
 func Logic0111(n int) {
-	fmt.Println("logic_01_11")
-
 	array := make([]int, n/2)
 
 	for i := 0; i < n/2; i++ {
